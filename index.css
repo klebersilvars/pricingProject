@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-Padrao: #def9ff;
+    --cor-letra: #141414;
+    --cor-card: #7F96FF;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cor-Padrao);
+    flex-direction: column;
+    gap: 3em;
+}
+
+.h1-title-geral {
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+
+.form-checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#label-annually,
+#label-monthly {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-basic-plan {
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.342);
+    height: 400px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.card-basic-plan h4 {
+    font-weight: bold;
+}
+
+.container-value-basic {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-value-basic h1 {
+    font-weight: bold;
+    font-size: 54px;
+}
+
+
+
+.infos-container-basic {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10px;
+}
+
+.infos-container-basic h5 {
+    font-weight: bold;
+}
+
+.button-container-basic {
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-learnMore {
+    width: 230px;
+    height: 40px;
+    background-color: var(--cor-card);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.281);
+    border-radius: 6px;
+}
+
+.button-learnMore:hover {
+    background-color: rgb(171, 185, 212);
+    color: white;
+    transition: 0.3s;
+}
+
+.card-prof-plan {
+    background: -webkit-linear-gradient(left, #7F96FF, #689ad4);
+    background: -moz-linear-gradient(left, #7F96FF, #689ad4);
+    background: -ms-linear-gradient(left, #7F96FF, #689ad4);
+    background: -o-linear-gradient(left, #7F96FF, #689ad4);
+    background: linear-gradient(to right, #7F96FF, #689ad4);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.342);
+    height: 410px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.card-prof-plan h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.container-value-prof-plan {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-value-prof-plan h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: rgb(243, 243, 243);
+}
+
+.infos-container-prof-plan {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.infos-container-prof-plan h5 {
+    font-weight: bold;
+    color: white;
+}
+
+.button-container-plan {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-learnMoreProf {
+    background-color: white;
+    height: 40px;
+    width: 230px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button-learnMoreProf:hover {
+    background-color: rgba(216, 216, 216, 0.781);
+    transition: all 0.5s;
+}
+
+.card-master-plan {
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.342);
+    height: 400px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.card-master-plan h4 {
+    font-weight: bold;
+}
+
+.container-value-master-plan {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-value-master-plan h1 {
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.infos-container-master-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.infos-container-master-plan h5 {
+    font-weight: bold;
+}
+
+.button-container-master-plan {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.button-learnMoreMaster {
+    width: 230px;
+    height: 40px;
+    background-color: var(--cor-card);
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.281);
+    border-radius: 6px;
+    color: black;
+}
+
+.monthly {
+    display: none;
+}
